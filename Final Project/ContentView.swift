@@ -11,7 +11,8 @@ struct ContentView: View {
     var body: some View {
         VStack {
 
-            Text("final project")
+            Text("MindfulMe")
+                .font(.largeTitle)
         }
         .padding()
     }

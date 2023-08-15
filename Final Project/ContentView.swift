@@ -30,10 +30,14 @@ struct ContentView: View {
             Spacer()
             }
             Spacer()
+            Text("Did you know that 1 in 3 college students experience significant depression and anxiety?")
+                .font(.title)
+                
+            
+            Spacer()
             
             
-        Text("Did you know that 1 in 3 college students experience significant depression and anxiety?")
-            
+
             //MindfulMe provides students with resources for dealing with mental health problems and limiting stress from school.")
         }
         .padding()

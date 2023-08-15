@@ -11,20 +11,30 @@ struct ContentView: View {
     var body: some View {
         VStack {
             HStack {
-                Image("brain")
-                    .resizable(resizingMode: .stretch)
-                    .aspectRatio(contentMode: .fill)
+                Spacer()
+                
                 Text("MindfulMe")
                     .font(.largeTitle)
+                    .fontWeight(.bold)
+                
+                Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
+                
+                Image("brain")
+                    .resizable(resizingMode: .stretch)
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 90.0)
                 
             Spacer()
             }
             Spacer()
             
             
+        Text("Did you know that 1 in 3 college students experience significant depression and anxiety?")
             
-            
-            //Text("blurb: Did you know, according to mayoclinichealthsystem.org, Since the start of the COVID-19 pandemic, rates of anxiety and depression among college students have increased substantially. A recent study found that 1 in 3 college students experiences significant depression and anxiety. Our app provides students with resources for dealing with mental health problems and limiting stress from school.")
+            //MindfulMe provides students with resources for dealing with mental health problems and limiting stress from school.")
         }
         .padding()
     }

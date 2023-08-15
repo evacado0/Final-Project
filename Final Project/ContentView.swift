@@ -11,8 +11,12 @@ struct ContentView: View {
     var body: some View {
         VStack {
             HStack {
+                Image("brain")
+                    .resizable(resizingMode: .stretch)
+                    .aspectRatio(contentMode: .fill)
                 Text("MindfulMe")
                     .font(.largeTitle)
+                
             Spacer()
             }
             Spacer()

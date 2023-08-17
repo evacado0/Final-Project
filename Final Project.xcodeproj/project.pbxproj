@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BABD82282A8E6818000BD982 /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BABD82272A8E6818000BD982 /* Raleway-Bold.ttf */; };
+		BABD822B2A8E6F30000BD982 /* Final-Project-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BABD822A2A8E6F30000BD982 /* Final-Project-Info.plist */; };
+		BABD822D2A8E721A000BD982 /* Raleway-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BABD822C2A8E721A000BD982 /* Raleway-Italic.ttf */; };
+		BABD822F2A8E7226000BD982 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BABD822E2A8E7226000BD982 /* Raleway-Regular.ttf */; };
 		C7046D4B2A8AAE0200927D70 /* Final_ProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7046D4A2A8AAE0200927D70 /* Final_ProjectApp.swift */; };
 		C7046D4D2A8AAE0200927D70 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7046D4C2A8AAE0200927D70 /* ContentView.swift */; };
 		C7046D4F2A8AAE0500927D70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7046D4E2A8AAE0500927D70 /* Assets.xcassets */; };
@@ -18,6 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BABD82272A8E6818000BD982 /* Raleway-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Bold.ttf"; sourceTree = "<group>"; };
+		BABD822A2A8E6F30000BD982 /* Final-Project-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Final-Project-Info.plist"; sourceTree = "<group>"; };
+		BABD822C2A8E721A000BD982 /* Raleway-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Italic.ttf"; sourceTree = "<group>"; };
+		BABD822E2A8E7226000BD982 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
 		C7046D472A8AAE0200927D70 /* Final Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Final Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7046D4A2A8AAE0200927D70 /* Final_ProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Final_ProjectApp.swift; sourceTree = "<group>"; };
 		C7046D4C2A8AAE0200927D70 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -40,6 +48,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BABD82222A8E67DC000BD982 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				BABD82272A8E6818000BD982 /* Raleway-Bold.ttf */,
+				BABD822C2A8E721A000BD982 /* Raleway-Italic.ttf */,
+				BABD822E2A8E7226000BD982 /* Raleway-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		C7046D3E2A8AAE0200927D70 = {
 			isa = PBXGroup;
 			children = (
@@ -59,6 +77,8 @@
 		C7046D492A8AAE0200927D70 /* Final Project */ = {
 			isa = PBXGroup;
 			children = (
+				BABD822A2A8E6F30000BD982 /* Final-Project-Info.plist */,
+				BABD82222A8E67DC000BD982 /* Fonts */,
 				C7046D4A2A8AAE0200927D70 /* Final_ProjectApp.swift */,
 				C7046D4C2A8AAE0200927D70 /* ContentView.swift */,
 				C7A16BE72A8BED45005FF795 /* Resources.swift */,
@@ -138,7 +158,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7046D522A8AAE0500927D70 /* Preview Assets.xcassets in Resources */,
+				BABD822F2A8E7226000BD982 /* Raleway-Regular.ttf in Resources */,
+				BABD822D2A8E721A000BD982 /* Raleway-Italic.ttf in Resources */,
 				C7046D4F2A8AAE0500927D70 /* Assets.xcassets in Resources */,
+				BABD822B2A8E6F30000BD982 /* Final-Project-Info.plist in Resources */,
+				BABD82282A8E6818000BD982 /* Raleway-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +309,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Final Project/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Final-Project-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -313,6 +338,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Final Project/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Final-Project-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

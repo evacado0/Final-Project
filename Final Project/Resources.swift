@@ -41,7 +41,7 @@ struct Resources: View {
                         {Text("Resources")
                             .foregroundColor(Color.black)}
                         .font(.custom("Raleway-Regular", size: 18))
-                        NavigationLink(destination: Timer())
+                        NavigationLink(destination: TimerView())
                         {Text("Timer")
                             .foregroundColor(Color.black)}
                         .font(.custom("Raleway-Regular", size: 18))

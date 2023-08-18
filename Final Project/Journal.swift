@@ -16,6 +16,7 @@ struct Journal: View {
                     Spacer()
                     Text("MindfulMe")
                         .font(.custom("Raleway-Bold", size: 35))
+                        .foregroundColor(Color(red: 97/255, green: 137/255, blue: 133/255))
                     
                     Spacer()
                     Spacer()
@@ -47,10 +48,18 @@ struct Journal: View {
                     .font(.custom("Raleway-Regular", size: 18))
                 }
                 Spacer()
-                Text("Use this space to write about anything!")
-                TextField("start typing...", text: $text).padding()
-                    .background(Color(.systemGroupedBackground))
-                        .cornerRadius(15)
+                Spacer()
+                Text("Use this space to write about anything!").font(.custom("Raleway-Bold", size: 30))
+                    .foregroundColor(Color(red: 97/255, green: 137/255, blue: 133/255))
+
+                VStack {
+                            TextEditor(text: $text)
+                                .frame(minHeight: 100)
+                                .padding()
+                                .border(Color.gray, width: 1)
+                              //  .cornerRadius(20)
+                    
+                        }
                         .padding()
                 
                 Button("Clear") {
@@ -60,9 +69,7 @@ struct Journal: View {
                     .padding()
                     .background(Color(red: 97/255, green: 137/255, blue: 133/255))
                     .cornerRadius(40)
-                Spacer()
-                Spacer()
-                Spacer()
+               
                 
                 
                 Spacer()

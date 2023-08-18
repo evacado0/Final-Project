@@ -27,6 +27,7 @@ struct TimerView: View {
                     Spacer()
                     Text("MindfulMe")
                         .font(.custom("Raleway-Bold", size: 35))
+                        .foregroundColor(Color(red: 97/255, green: 137/255, blue: 133/255))
                     
                     Spacer()
                     Spacer()

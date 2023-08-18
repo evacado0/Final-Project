@@ -80,7 +80,9 @@ struct ContentView: View {
                             .multilineTextAlignment(.center)
                             .font(.custom("Raleway-Regular", size: 20))
                     }
-                    Button("Click me!"){
+                    Spacer(minLength: 40)
+                    
+                    Button("Tap me!"){
                         let fact = randomFacts.randomElement()!
                         factText = fact
                     }

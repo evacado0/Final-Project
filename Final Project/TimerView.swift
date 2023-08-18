@@ -59,22 +59,22 @@ struct TimerView: View {
                     .font(.custom("Raleway-Regular", size: 18))
                 }
                 Spacer()
-                //Text("Hello, World!")
             }   .navigationTitle("Home")
                 .navigationBarHidden(true)
           
             
             
             Text("Here is a timer that you can use to time how long you want to study or take a break for.")
-                .font(.custom("Raleway-Regular", size: 30))
+                .font(.custom("Raleway-Regular", size: 25))
                 .multilineTextAlignment(.center)
                 .padding()
+            Spacer(minLength: 30)
             
-            Text("To enter focus mode, click the button below, go to Accessibility in Settings and then scroll down to Guided Access")
+            Text("To enter focus mode, press the button below, go to Accessibility in settings and then scroll down to Guided Access.")
                 .font(.custom("Raleway-Regular", size: 20))
-            
                 .multilineTextAlignment(.center)
                 .padding()
+            Spacer(minLength: 30)
             
             
             //lockdown
@@ -94,7 +94,7 @@ struct TimerView: View {
                     secondaryButton: .cancel()
                 )
             }
-            Spacer()
+            Spacer(minLength: 10)
             Text("\(vm.time)")
                 .font(.system(size: 70, weight: .medium, design: .rounded))
                   .padding()

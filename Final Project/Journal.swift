@@ -46,7 +46,17 @@ struct Journal: View {
                     .font(.custom("Raleway-Regular", size: 18))
                 }
                 Spacer()
-                Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+                Text("Use this space to write about anything!")
+                TextField("start typing...", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/).padding()
+                    .background(Color(.systemGroupedBackground))
+                        .cornerRadius(15)
+                        .padding()
+                Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
+            
             }   .navigationTitle("Home")
                 .navigationBarHidden(true)
         }

@@ -30,7 +30,7 @@ final class TimerViewModel: ObservableObject {
         self.initialTime = Int(minutes)
         self.endDate = Date()
         self.isActive = true
-        self.endDate = Calendar.current.date(byAdding: .minute, value: Int(minutes), to: self.endDate)!
+      //  self.endDate = Calendar.current.date(byAdding: .minute, value: Int(minutes), to: self.endDate)!
         //self.endDate = Calendar.current.date(byAdding: .minute, value: Int(minutes), to: endDate)!
     }
 

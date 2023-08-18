@@ -91,7 +91,7 @@ struct Resources: View {
                     
                     //Websites to Destress
                     VStack(alignment: .center, spacing: 20.0) {
-                        Text("Websites to Destress (Clickable!)")
+                        Text("Websites to Destress (Tappable!)")
                             .font(.custom("Raleway-Bold", size: 23))
                             .foregroundColor(Color.black)
                             .multilineTextAlignment(.center)

@@ -32,6 +32,7 @@ final class TimerViewModel: ObservableObject {
         self.isActive = true
       //  self.endDate = Calendar.current.date(byAdding: .minute, value: Int(minutes), to: self.endDate)!
         //self.endDate = Calendar.current.date(byAdding: .minute, value: Int(minutes), to: endDate)!
+        self.endDate = endDate.addingTimeInterval(TimeInterval(minutes * 60))
     }
 
     func reset() {

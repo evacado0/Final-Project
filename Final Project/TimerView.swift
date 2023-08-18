@@ -66,11 +66,14 @@ struct TimerView: View {
             
             
             Text("Here is a timer that you can use to time how long you want to study or take a break for.")
-                .font(.title)
+                .font(.custom("Raleway-Regular", size: 30))
+                .multilineTextAlignment(.center)
                 .padding()
             
             Text("To enter focus mode, click the button below, go to Accessibility in Settings and then scroll down to Guided Access")
-                .font(.title3)
+                .font(.custom("Raleway-Regular", size: 20))
+            
+                .multilineTextAlignment(.center)
                 .padding()
             
             
@@ -78,7 +81,11 @@ struct TimerView: View {
             Button("Enable Kiosk Mode") {
                 showAlert = true
             }
+            .font(.custom("Raleway-Bold", size: 15))
+            .foregroundColor(Color.white)
             .padding()
+            .background(Color(red: 97/255, green: 137/255, blue: 133/255))
+            .cornerRadius(40)
             .alert(isPresented: $showAlert) {
                 Alert(
                     title: Text("Enter Focus Mode?"),
@@ -97,7 +104,8 @@ struct TimerView: View {
                 .alert("Timer done!", isPresented: $vm.showingAlert){
                         
                     Button("Continue", role: .cancel){
-                    //code
+                        
+                //code
                 }
                     
                 }
@@ -110,9 +118,18 @@ struct TimerView: View {
                 Button("Start"){
                     vm.start(minutes: vm.minutes)
                 }.disabled(vm.isActive)
+                    .font(.custom("Raleway-Bold", size: 15))
+                    .foregroundColor(Color.white)
+                    .padding()
+                    .background(Color(red: 97/255, green: 137/255, blue: 133/255))
+                    .cornerRadius(40)
                 
                 Button("Reset", action:vm.reset)
-                    .tint(.red)
+                    .font(.custom("Raleway-Bold", size: 15))
+                    .foregroundColor(Color.white)
+                    .padding()
+                    .background(Color(red: 97/255, green: 137/255, blue: 133/255))
+                    .cornerRadius(40)
                 
                 
             }.frame(width: width)

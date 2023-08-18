@@ -51,14 +51,14 @@ struct Journal: View {
                 Spacer()
                 Text("Use this space to write about anything!").font(.custom("Raleway-Bold", size: 30))
                     .foregroundColor(Color(red: 97/255, green: 137/255, blue: 133/255))
+                    .multilineTextAlignment(.center)
 
                 VStack {
                             TextEditor(text: $text)
                                 .frame(minHeight: 100)
                                 .padding()
-                                .border(Color.gray, width: 1)
-                              //  .cornerRadius(20)
-                    
+                                .border(Color.black, width: 1)
+                                .font(.custom("Raleway-Regular", size: 18))
                         }
                         .padding()
                 

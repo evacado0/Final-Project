@@ -19,6 +19,7 @@ struct ContentView: View {
                 Spacer()
                 Text("MindfulMe")
                     .font(.custom("Raleway-Bold", size: 35))
+                    .foregroundColor(Color(red: 97/255, green: 137/255, blue: 133/255))
                 
                 Spacer()
                 Spacer()
@@ -71,7 +72,7 @@ struct ContentView: View {
                     //Fast Facts
                     Text("Fast Facts")
                         .font(.custom("Raleway-Bold", size: 28))
-                        .foregroundColor(Color.blue)
+                        .foregroundColor(Color(red: 97/255, green: 137/255, blue: 133/255))
                         .padding(30)
                     
                     VStack {
@@ -82,9 +83,12 @@ struct ContentView: View {
                     Button("Click me!"){
                         let fact = randomFacts.randomElement()!
                         factText = fact
-                    }.buttonStyle(.borderedProminent)
-                        .font(.custom("Raleway-Regular", size: 15))
+                    }
+                        .font(.custom("Raleway-Bold", size: 15))
+                        .foregroundColor(Color.white)
                         .padding()
+                        .background(Color(red: 97/255, green: 137/255, blue: 133/255))
+                        .cornerRadius(40)
                 }
                 .padding()
                 .navigationTitle("Home")

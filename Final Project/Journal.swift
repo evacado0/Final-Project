@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct Journal: View {
+    @State private var text: String = ""
     var body: some View {
         VStack{
             NavigationStack{
@@ -47,7 +48,7 @@ struct Journal: View {
                 }
                 Spacer()
                 Text("Use this space to write about anything!")
-                TextField("start typing...", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/).padding()
+                TextField("start typing...", text: $text).padding()
                     .background(Color(.systemGroupedBackground))
                         .cornerRadius(15)
                         .padding()
@@ -56,6 +57,7 @@ struct Journal: View {
                 Spacer()
                 Spacer()
                 Spacer()
+                
             
             }   .navigationTitle("Home")
                 .navigationBarHidden(true)

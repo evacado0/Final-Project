@@ -52,10 +52,19 @@ struct Journal: View {
                     .background(Color(.systemGroupedBackground))
                         .cornerRadius(15)
                         .padding()
+                
+                Button("Clear") {
+                    text = ""
+                }.font(.custom("Raleway-Bold", size: 15))
+                    .foregroundColor(Color.white)
+                    .padding()
+                    .background(Color(red: 97/255, green: 137/255, blue: 133/255))
+                    .cornerRadius(40)
                 Spacer()
                 Spacer()
                 Spacer()
-                Spacer()
+                
+                
                 Spacer()
                 
             
